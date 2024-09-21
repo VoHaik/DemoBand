@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to my band</title>
+    <link rel="stylesheet" href="BandTemplate.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script async="false" type="text/javascript" src="chrome-extension://fnjhmkhhmkbjkkabndcnnogagogbneec/in-page.js"></script>
+    <link rel="stylesheet" href="popup-ticket.css">
+    <link rel="stylesheet" href="Contact.css">
+</head>
+<body>
+    <div class="model-box" id="modelBox">
+            <div class="heading-container">
+                <div class="suitcase">
+                    <i class="fa fa-suitcase "></i>
+                </div>
+                <h2 class="title">Tickets</h2>
+            </div>  
+            <div class="body-container general-rules-for-body">
+                <p><span class="fa fa-shopping-cart fa-fa-icon"></span>Tickets, 15$ per person</p>
+                <input placeholder="How many?" class="input-box">
+                <p><span class="fa fa-user fa-fa-icon"></span>Send to</p>
+                <input placeholder="Enter email" class="input-box">
+                <button class="pay-button">PAY <span class="fa fa-check"></span></button>
+                <button class="close-button" onclick="closeModel()">
+                    Close <span class="fa fa-remove"></span>
+                </button>
+                <p class="need-help">
+                    Need <a href="#Band" style="color: #2196F3;text-decoration: underline;">help?</a>
+                </p>
+            </div>
+            <button class="close-top-button general-rules-for-body" onclick="closeModel()"><span style="position: absolute; top: 20px;right: 15px;" class="fa fa-remove"></span></button>
+    </div>    
+        <div class="overlay" onclick="openModel()" id="Overlay" ></div>
+    <div class=" black-bar">
+        <div class="general-rules-container-on-bar">
+            <a class="general-rules-black-bar Home-band" href="#Home">HOME</a>
+        </div>
+        <div class="general-rules-container-on-bar">
+            <a class="general-rules-black-bar Band-band" href="#Band">BAND</a>
+        </div>
+        <div class="general-rules-container-on-bar">
+            <a class="general-rules-black-bar Tour-band" href="#Tour">TOUR</a>
+        </div>
+        <div class="general-rules-container-on-bar">
+            <a class="general-rules-black-bar Contact-band" href="#Contact">CONTACT</a>
+        </div>
+        <div  class="general-rules-container-on-bar">
+            <button class=" more-button">MORE
+                <p class="fa fa-caret-down"></p>
+            </button>
+            <div  style="position: absolute;"  class="box-after-hovering-more-button">
+                <a href="#Home" class="general-rules-for-MEM Merchandise">Merchandise</a>
+                <a href="#Home" class="general-rules-for-MEM Extras">Extras</a>
+                <a href="#Home" class="general-rules-for-MEM Media">Media</a>
+            </div>
+        </div>
+        <a class="container-of-lens-icon">
+            <p style="color: white;" class="fa fa-search"></p>
+        </a>
+    </div>
+    <div class="container-slide-show "id="Home">
+        <div class="mySlides slide1">
+            <img src="back-ground-1.jpg" alt="" style="width: 100%;">
+            <div style="position: absolute;width: 300px;height: 100px;left: 40%;top: 85%;" >
+                <p style="color: white;position: absolute;left: 32%;font-size: 24px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">New York</p>
+                <p style="color: white;position: absolute;top: 45%;left: 5px;font-size: 15px;font-family: Lato,sans-serif;">The atmosphere in New York is lorem ispum</p>     
+            </div>
+        </div>
+        <div class="mySlides slide2">
+            <img src="bg-2.jpg" alt="" style="width: 100%;">
+            <div style="position: absolute;width: 300px;height: 100px;left: 40%;top: 85%;" >
+                <p style="color: white;position: absolute;left: 28%;font-size: 24px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Los Angeles</p>
+                <p style="color: white;position: absolute;top: 45%;left: 5px;font-size: 15px;font-family: Lato,sans-serif;">We had the bes playing time at Venice Beach!</p>     
+            </div>
+        </div>
+        <div class="mySlides slide3">
+            <img src="bg-3.jpg" alt="" style="width: 100%;">
+            <div style="position: absolute;width: 350px;height: 100px;left: 40%;top: 85%;" >
+                <p style="color: white;position: absolute;left: 35%;font-size: 24px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Chicago</p>
+                <p style="color: white;position: absolute;top: 45%;left: 5px;font-size: 15px;font-family: Lato,sans-serif;">Thank you, Chicago - the night that we can't forget</p>     
+            </div>
+        </div>  
+    </div>
+    <div class="content-container">
+        
+        <div class="band-container" id="Band">
+            <p style="font-size: 30px;font-family: 'Segoe UI',Arial,sans-serif;margin: 10px 0px;">T H E  B A N D</p>
+            <i style="font-size: 15px;font-family: Lato,sans-serif;">We love music</i>
+            <p style="font-size: 15px;font-family: Lato,sans-serif;text-align: justify;">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="image-of-band-container">
+                <div style="width:255.99px;height:222.09px;display: flex;flex-direction: column;align-items: center;">
+                    <p style="margin: 15px 0px; font-size: 15px;font-family: Lato,sans-serif;" >Name</p>
+                    <img style="width:60%;object-fit: contain;margin-bottom:16px;border-radius: 4px;" src="bg-4.jpg" alt="">  
+                </div>
+                <div style="width:255.99px;height:222.09px;display: flex;flex-direction: column;align-items: center;">
+                    <p style="margin: 15px 0px; font-size: 15px;font-family: Lato,sans-serif;" >Name</p>
+                    <img style="width:60%;object-fit: contain;margin-bottom:16px;border-radius: 4px;" src="bg-4.jpg" alt="">  
+                </div>
+                <div style="width:255.99px;height:222.09px;display: flex;flex-direction: column;align-items: center;">
+                    <p style="margin: 15px 0px; font-size: 15px;font-family: Lato,sans-serif;" >Name</p>
+                    <img style="width:60%;object-fit: contain;margin-bottom:16px;border-radius: 4px;" src="bg-4.jpg" alt="">  
+                </div>
+            </div>
+        </div>
+        <div class="Tour-dates" id="Tour">
+            <p style="color: white;font-size: 30px;font-family: 'Segoe UI', Arial, sans-serif;margin: 10px 0px;letter-spacing: 4px;">TOUR DATES</p>
+            <i style="font-size: 15px;font-family: Lato,sans-serif;color: #ffffffcb;">Remember to book your tickets!</i>
+            <ul class="sell-dates">
+                <div class="date-contaier">
+                    <p style="padding: 8px 16px;color: #757575;">September <span class="sold-out"> Sold out </span></p>
+                </div>
+                <div class="date-contaier">
+                    <p style="padding: 8px 16px;color: #757575;">October <span class="sold-out"> Sold out </span></p>
+                </div>
+                <div class="date-contaier">
+                        <p style="padding: 8px 16px;color: #757575;">November <span style="font-size: 15px;font-family: Lato,sans-serif;background-color: black; padding: 4px 8px;border-radius: 100%;margin-left: 636px;color: white;">3</span></p>
+                </div>
+            </ul>
+            <div class="ticket-information">
+                <div class="per-ticket">
+                    <div class="bg-5">
+                        <img src="bg-5.jpg" class="bg-5">
+                    </div>
+                    <div style="display: flex;flex-direction: column;background-color: white;padding-top: 10px;">
+                        <p class="general-words-fonts-ticket">
+                            <b>New York</b>
+                        </p>
+                        <p class="general-words-fonts-ticket" style="opacity: 0.6;">
+                            Fri 27 Nov 2016
+                        </p>
+                        <p class="general-words-fonts-ticket">
+                            Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                        </p>
+                        <button class=" buy-tickets" style="margin:0px 0px 16px 16px;" onclick="openModel()">
+                            Buy Tickets
+                        </button>
+                    </div>    
+                </div>
+                <div class="per-ticket">
+                    <div class="bg-5">
+                        <img src="bg-6.jpg" class="bg-5">
+                    </div>
+                    <div style="display: flex;flex-direction: column;background-color: white;padding-top: 10px;">
+                        <p class="general-words-fonts-ticket">
+                            <b>Paris</b>
+                        </p>
+                        <p class="general-words-fonts-ticket" style="opacity: 0.6;">
+                            Fri 27 Nov 2016
+                        </p>
+                        <p class="general-words-fonts-ticket">
+                            Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                        </p>
+                        <button class=" buy-tickets" style="margin:0px 0px 16px 16px;" onclick="openModel()">
+                            Buy Tickets
+                        </button>
+                    </div>    
+                </div>
+                <div class="per-ticket">
+                    <div class="bg-5">
+                        <img src="bg-8.jpg" class="bg-5">
+                    </div>
+                    <div style="display: flex;flex-direction: column;background-color: white;padding-top: 10px;">
+                        <p class="general-words-fonts-ticket">
+                            <b>San Francisco</b>
+                        </p>
+                        <p class="general-words-fonts-ticket" style="opacity: 0.6;">
+                            Fri 27 Nov 2016
+                        </p>
+                        <p class="general-words-fonts-ticket">
+                            Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                        </p>
+                        <button class=" buy-tickets" style="margin:0px 0px 16px 16px;" onclick="openModel()">
+                            Buy Tickets
+                        </button>
+                    </div>    
+                </div>
+            </div>
+        </div>
+        <div class="contact-container" id="Contact">
+            <h2 class="Heading">CONTACT</h2>
+            <i class="italics-word">Fan? Drop a note!</i>
+            <div class="body-contact-container">
+                <div class="information">
+                    <p><span class="fa fa-map-marker edit-span"></span>Chicago, US</p>
+                    <p><span class="fa fa-phone edit-span"></span>+00 151515</p>
+                    <p><span class="fa fa-envelope edit-span"></span>Email:mail@mail.com</p>
+                </div>
+                <div class="fill-form">
+                    <form action="/action_page.php">
+                        <input class="input-contact-box name" type="text" name="" id="" placeholder="Name" required>
+                        <input class="input-contact-box mail" type="text" name="" id="" placeholder="Email" required>
+                        <input class="input-contact-box message" type="text" name="" id="" placeholder="Messeage" required>
+                        <button class="send-button">SEND</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <img src="bg-9.jpg" alt="">    
+    </div>
+    <footer class="footer-div">
+        <div><i class="fa fa-facebook-official w3-hover-opacity media-icons"></i>
+            <i class="fa fa-instagram w3-hover-opacity media-icons" ></i>
+            <i class="fa fa-snapchat w3-hover-opacity media-icons"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity media-icons"></i>
+            <i class="fa fa-twitter w3-hover-opacity media-icons"></i>
+            <i class="fa fa-linkedin w3-hover-opacity media-icons"></i></div>
+        <p style="font-size: 15px;font-family: Lato,sans-serif;">Powered by <a href="https://www.w3schools.com/w3css/default.asp" style="color: black;">w3.css</a></p>
+    </footer>
+    <script>
+        function openModel() {
+            document.getElementById("modelBox").style.display = "block";
+            document.getElementById("Overlay").style.display = "block";
+            }
+        function closeModel() {
+        document.getElementById("modelBox").style.display ="none";
+        document.getElementById("Overlay").style.display ="none";
+            }
+    </script>
+</body>
+</html>
